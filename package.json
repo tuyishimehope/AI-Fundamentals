@@ -4,17 +4,21 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bun run index.ts"
+    "dev": "bun run index.ts",
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@types/bun": "latest",
     "@types/node": "^25.0.9",
-    "concurrently": "^9.2.1"
+    "concurrently": "^9.2.1",
+    "prettier": "^3.8.0"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "dependencies": {
     "dotenv": "^17.2.3"
   }
