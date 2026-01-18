@@ -11,6 +11,10 @@ app.get("/", (req:Request,res:Response) =>{
     res.send(`Hello world! Your API key is ${process.env.OPENAI_API_KEY}`);
 })
 
+app.get("/api/hello", (req:Request,res:Response) =>{
+    res.json({message: "Hello from API"});
+})
+
 app.listen(port, () => {
     console.log(`Server is listening on ${port}`)
 })
