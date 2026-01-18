@@ -5,12 +5,14 @@
   "private": true,
   "scripts": {
     "dev": "bun run index.ts",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@types/bun": "latest",
     "@types/node": "^25.0.9",
     "concurrently": "^9.2.1",
+    "husky": "^9.1.7",
     "prettier": "^3.8.0"
   },
   "peerDependencies": {
@@ -20,6 +22,7 @@
     "packages/*"
   ],
   "dependencies": {
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "lint-staged": "^16.2.7"
   }
 }
