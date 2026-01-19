@@ -1,6 +1,6 @@
 const conversations = new Map<string, string>();
 
-export const conversationalRepository = {
+export const conversationRepository = {
   getPreviousResponseId(conversationId: string) {
     return conversations.get(conversationId);
   },

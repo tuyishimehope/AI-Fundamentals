@@ -8,7 +8,7 @@ const chatSchema = z.object({
     .trim()
     .min(1, "prompt is required")
     .max(1000, "prompt is too long"),
-  conversionId: z.string().uuid(),
+  conversationId: z.string().uuid(),
 });
 
 export const chatController = {
