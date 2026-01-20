@@ -1,0 +1,4 @@
+Summarize the following customer reviews in a short paragraph for product and hightlight key themes
+both positive and negative
+
+{{reviews}}
